@@ -1,0 +1,176 @@
+.hero {
+  padding: 5rem 1.5rem;
+  margin-inline: -1.5rem;
+  text-align: center;
+  background: url(/assets/web-design/desktop/bg-pattern-intro-web.svg), hsl(var(--clr-accent));
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 250%;
+}
+
+.hero h1 {
+  padding-bottom: .7em;
+}
+
+@media(min-width: 42em){
+  .hero {
+    border-radius: 8px;
+    margin-inline:0;
+    padding: 4rem 6rem;
+    background-position: -100% center;
+    background-size: 110%;
+  }
+
+  .hero h1,
+  .hero p {
+    max-width:550px;
+    margin-inline: auto;
+  }  
+
+  .hero h1 {
+    padding-bottom: .5em;
+  }
+}
+
+@media(min-width: 60em){
+  .hero {
+    background-position: right center;
+    background-size: 70%;
+  }
+
+  .hero h1,
+  .hero p {
+    margin: 0 auto;
+  }
+}
+
+
+
+/* Portfolio styles */
+
+.portfolio a {
+  text-decoration: none;
+  gap: 0;
+}
+
+.portfolio__project {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.portfolio__project__image {
+  width: 100%;
+  aspect-ratio: 1;
+  transition: background .2s ease-in;
+}
+
+.portfolio__project:nth-child(1) .portfolio__project__image {
+  background: url(/assets/app-design/desktop/image-airfilter.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.portfolio__project:nth-child(2) .portfolio__project__image {
+  background: url(/assets/app-design/desktop/image-eyecam.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.portfolio__project:nth-child(3) .portfolio__project__image {
+  background: url(/assets/app-design/desktop/image-faceit.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.portfolio__project:nth-child(4) .portfolio__project__image {
+  background: url(/assets/app-design/desktop/image-todo.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.portfolio__project:nth-child(5) .portfolio__project__image {
+  background: url(/assets/app-design/desktop/image-loopstudios.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.portfolio__project:hover .portfolio__project__image {
+  background-size: 120%;
+}
+
+
+.portfolio__project__description {
+  flex-direction: column;
+  justify-content: center;
+  gap:0;
+  background-color: hsl(var(--clr-accent-lightest));
+  text-align: center;
+  padding: 2rem;
+  transition: all .2s ease;
+}
+
+.portfolio__project__description h2 {
+  padding-bottom: .8em;
+}
+
+.portfolio a:hover .portfolio__project__description {
+  background-color: hsl(var(--clr-accent));
+  color: hsl(var(--clr-white));
+}
+
+.portfolio a:hover .portfolio__project__description h2 {
+  color: hsl(var(--clr-white));
+}
+
+@media (min-width: 48em) {
+ .portfolio a {
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+ }
+
+ .portfolio__project__description {
+  height: 100%;
+ }
+}
+
+@media (min-width: 60em) {
+  .portfolio {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .portfolio a {
+    grid-template-columns: 1fr;
+   }
+  
+}
+
+
+/* Black grid styles */
+
+.services__box:nth-child(1) {
+  background: url(/assets/home/desktop/image-web-design-small.jpg);
+  background-size: 115%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services__box:nth-child(2) {
+  background: url(/assets/home/desktop/image-graphic-design.jpg);
+  background-size: 115%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services__box:hover {
+  background-size: 120%;
+}
+
+
+@media (min-width: 60em) {
+ 
+  .services {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}

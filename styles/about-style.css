@@ -1,0 +1,214 @@
+/* Body background shapes variation */
+
+@media (min-width: 60em) {
+  body::after {
+    transform: translate(70%,-200%) scale(-1,-1);
+  }
+  
+}
+
+
+
+/* About section */
+
+.about,
+.talent,
+.real-deal {
+  margin-inline: -1.5rem;
+  gap: 0;
+  overflow:hidden;
+}
+
+.talent.container {
+  margin-top: 0;
+}
+
+.about__img {
+  width: 100%;
+  height: 320px;
+  background: url(/assets/about/mobile/image-about-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.talent__img {
+  width: 100%;
+  height: 320px;
+  background: url(/assets/about/mobile/image-world-class-talent.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.real-deal__img {
+  width: 100%;
+  height: 320px;
+  background: url(/assets/about/mobile/image-real-deal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about__text {
+  padding: 5rem 1.5rem;
+  text-align: center;
+
+  background: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg), hsl(var(--clr-accent));
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: 100% 20%;
+}
+
+.talent__text,
+.real-deal__text {
+  padding: 5rem 1.5rem;
+  text-align: center;
+
+  background: url(/assets/shared/desktop/bg-pattern-three-circles.svg), hsl(var(--clr-accent-lightest));
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: left top;
+}
+
+.about__text__title,
+.talent__text__title,
+.real-deal__text__title {
+  padding-bottom: .7em;
+}
+
+.talent p:first-of-type,
+.real-deal p:first-of-type {
+  padding-bottom: 1.5rem;
+}
+
+@media (min-width: 23em) {
+
+  .about__img {
+    background: url(/assets/about/tablet/image-about-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .talent__img {
+    background: url(/assets/about/tablet/image-world-class-talent.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .real-deal__img {
+    background: url(/assets/about/tablet/image-real-deal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+}
+
+
+@media (min-width: 48em) {
+  .about,
+  .talent,
+  .real-deal {
+    margin-inline: 0;
+    border-radius: 8px;
+  }
+
+  .talent.container {
+    margin-top: 120px;
+  }
+
+
+  .about__text,
+  .talent__text,
+  .real-deal__text {
+    padding-inline: 3.75rem;
+  }
+
+  .about__text {
+    background-size: 270%;
+    background-position: 115% 25%;
+  }
+
+  .talent__text,
+  .real-deal__text {
+    background-size: 80%;
+    background-position: right 120%;
+  }
+}
+
+@media (min-width: 60em) {
+
+  .about,
+  .talent,
+  .real-deal {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .about__img,
+  .real-deal__img {
+    grid-column: 4 / 6;
+    grid-row: 1 / 2;
+  }
+
+  .about__img {
+    height: unset;
+    background: url(/assets/about/desktop/image-about-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .real-deal__img {
+    height: unset;
+    background: url(/assets/about/desktop/image-real-deal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .about__text,
+  .real-deal__text {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    text-align: left;
+    padding: 8.4rem 6rem;
+  }
+
+  .about__text {
+    background-size: 300%;
+    background-position: 50% 10%;
+  }
+  
+  .real-deal__text {
+    background-size: 80%;
+    background-position: -100% 120%;
+  }
+
+  .talent__img {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+
+  .talent__img {
+    height: unset;
+    background: url(/assets/about/desktop/image-world-class-talent.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .talent__text {
+    grid-column: 3 / 6;
+    grid-row: 1 / 2;
+    text-align: left;
+    padding: 8.4rem 6rem;
+    background-size: 80%;
+    background-position: -100% 120%;
+  }
+}

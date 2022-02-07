@@ -1,0 +1,148 @@
+html{
+  scroll-behavior: smooth;
+}
+
+/* Body background shapes variation */
+
+@media (min-width: 60em) {
+
+  body::before,
+  body::after {
+    display:none;
+  }
+  
+}
+
+
+
+/* Maps */
+
+
+.maps {
+  margin-inline: -1.5rem;
+  gap: 0;
+  grid-template-areas:
+    'map-canada'
+    'map-canada-info'
+    'map-australia'
+    'map-australia-info'
+    'map-uk'
+    'map-uk-info';
+}
+
+.maps__map {
+  aspect-ratio: 1.17;
+  z-index: 1;
+}
+
+.maps__info {
+  padding: 5rem 1.5rem;
+  text-align:center;
+  gap: 0;
+  background: url(/assets/shared/desktop/bg-pattern-three-circles.svg), hsl(var(--clr-accent-lightest));
+}
+
+.maps__info__address {
+  margin-bottom: 1rem;
+}
+
+
+.maps__info h2 {
+  padding-bottom: 1.5rem;
+}
+
+.maps__map--canada {
+  grid-area: map-canada;
+}
+
+.maps__info--canada {
+  grid-area: map-canada-info;
+  margin-bottom: 2.5rem;
+}
+
+.maps__map--australia {
+  grid-area: map-australia;
+}
+
+.maps__info--australia {
+  grid-area: map-australia-info;
+  margin-bottom: 2.5rem;
+}
+
+.maps__map--uk {
+  grid-area: map-uk;
+}
+
+.maps__info--uk {
+  grid-area: map-uk-info;
+}
+
+
+@media (min-width: 48em) {
+
+  .maps {
+    gap: var(--gap);
+    margin-inline: unset;
+  }
+
+  .maps__map {
+    aspect-ratio: 2.1;
+  }
+
+
+  .maps__map,
+  .maps__info {
+    border-radius: 8px;
+    text-align: left;
+  }
+
+  .maps__info {
+    padding: 6rem 4.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: fit-content 1fr;
+  }
+
+  .maps__info__title {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .maps__info__address {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .maps__info__contact {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .maps__info--canada,
+  .maps__info--australia {
+    margin-bottom: 120px;
+  }
+
+
+}
+
+@media (min-width: 60em) {
+
+  .maps {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+      'map-canada-info map-canada-info map-canada'
+      'map-australia map-australia-info map-australia-info'
+      'map-uk-info map-uk-info map-uk';
+  }
+
+  .maps__map {
+    aspect-ratio: unset;
+  }
+
+  .maps__info--canada,
+  .maps__info--australia {
+    margin-bottom: 0;
+  }
+
+}

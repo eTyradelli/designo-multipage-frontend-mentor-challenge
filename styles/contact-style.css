@@ -1,0 +1,166 @@
+/* Body background shapes variation */
+
+@media (min-width: 60em) {
+
+  body::before {
+    display:none;
+  }
+
+  body::after {
+    transform: translate(70%,-30%) scale(-1,-1)
+  }
+  
+}
+
+
+/* Form styles */
+
+.contact {
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  padding: 5rem 1.5rem;
+  margin-inline: -1.5rem;
+  z-index: 2;
+  position: relative;
+
+  background: url(/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg), hsl(var(--clr-accent));
+  background-repeat: no-repeat;
+  background-position: 20% top;
+  background-size: 250%;
+}
+
+.contact__text {
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.contact__form {
+  flex-direction: column;
+}
+
+.contact__form__fields__field {
+  position: relative;
+}
+
+label {
+  width: 100%;
+  height: 70px;
+  display: block;
+  position: relative;
+  color: hsl(var(--clr-white) / .5);
+  padding-inline: 15px;
+  text-align: left;
+  transition: color .1s ease-in;
+}
+
+label.focused-label {
+  color: hsl(var(--clr-white) / 0);
+}
+
+input {
+  width: 100%;
+  position: absolute;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  left: 0;
+  top: 10px;
+  padding: 20px 15px 10px;
+  margin-top: -30px;
+  color: hsl(var(--clr-white));
+}
+
+
+label:focus-within input {
+  border-width: 2px;
+}
+
+
+.contact__form__submit {
+  align-self: center;
+}
+
+
+@media (min-width: 48em) {
+
+  .contact {
+    padding: 5rem;
+    margin-inline: 0;
+    border-radius: 8px;
+    text-align: left;
+
+    background: url(/assets/contact/desktop/bg-pattern-hero-desktop.svg), hsl(var(--clr-accent));
+    background-repeat: no-repeat;
+    background-position: -50% -50%;
+  }
+
+  .contact button {
+    align-self: end;
+  }
+
+}
+
+@media (min-width: 60em) {
+
+  .contact {
+    flex-direction: row;
+    gap: 6rem;
+    background-position: left 100%;
+  }
+
+  .contact__text,
+  .contact__form {
+    flex: 1 1 0;
+    place-content: center;
+  }
+
+
+}
+
+
+
+/******** FORM VALIDATION *******/
+
+.validation {
+  position: absolute;
+  top: 50%;
+  padding-left: 15px;
+}
+
+@media (max-width: 341px){
+  .validation {
+    position:relative;
+  }
+}
+
+.fas {
+  padding: 5px;
+  display: none!important;
+}
+
+.validation span {
+  display: none;
+  font-size: 15px;
+}
+
+.error span {
+  display: inline;
+}
+
+.error input {
+  border-color: hsl(var(--clr-error))!important;
+}
+
+.error .validation .fa-exclamation {
+  display:inline-block!important;
+}
+
+
+
+
+/* Footer variation */
+
+footer {
+  padding: 4.5rem 0;
+}

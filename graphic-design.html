@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/graphic-design-style.css">
+  
+  <title>Graphic Design | Designo Agency Website | Frontend Mentor Challenge</title>
+</head>
+<body>
+  <header class="flex max-width">
+    <a href="index.html" class="logo"><img src="assets/shared/desktop/logo-dark.png" alt=""></a>
+    <button id="menu-toggle" class="menu-toggle"><img class="menu-toggle__burger" src="assets/shared/mobile/icon-hamburger.svg" alt=""><img class="menu-toggle__close" src="assets/shared/mobile/icon-close.svg" alt=""></button>
+    <ul id="header-nav-mobile" class="header__nav flex uppercase fs-300 ltr-spacing-1" role="list" hidden>
+      <li><a href="about.html">Our company</a></li>
+      <li><a href="locations.html">Locations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+  
+  <main class="max-width">
+    <div class="overlay"></div>
+
+    <section class="hero clr-white">
+      <h1 class="hero__title fs-700 medium line-height-1">Graphic Design</h1>
+      <p>We deliver eye-catching branding materials that are tailored to meet your business objectives.</p>
+    </section>
+
+    <section class="portfolio container grid">
+
+      <a href="#" class="portfolio__project grid">
+        <div class="portfolio__project__image"></div>
+        <div class="portfolio__project__description flex">
+          <h2 class="uppercase fs-500 medium line-height-3 ltr-spacing-2 clr-accent">Tim Brown</h2>
+          <p class="desc">A book cover designed for Tim Brown’s new release, ‘Change’</p>
+        </div>
+      </a>
+      <a href="#" class="portfolio__project grid">
+        <div class="portfolio__project__image"></div>
+        <div class="portfolio__project__description flex">
+          <h2 class="uppercase fs-500 medium line-height-3 ltr-spacing-2 clr-accent">Boxed water</h2>
+          <p class="desc">A simple packaging concept made for Boxed Water</p>
+        </div>
+      </a>
+      <a href="#" class="portfolio__project grid">
+        <div class="portfolio__project__image"></div>
+        <div class="portfolio__project__description flex">
+          <h2 class="uppercase fs-500 medium line-height-3 ltr-spacing-2 clr-accent">Science!</h2>
+          <p class="desc">A poster made in collaboration with the Federal Art Project</p>
+        </div>
+      </a>
+
+    </section>
+   
+    <div class="services container grid">
+      <a href="app-design.html" class="services__box flex clr-white">
+        <h2 class="uppercase fs-600 line-height-2 ltr-spacing-1 medium">App design</h2>
+        <div class="cta uppercase clr-white ltr-spacing-2">View projects <span><img src="assets/shared/desktop/icon-right-arrow.svg" alt=""></span></div>
+      </a>
+
+      <a href="web-design.html" class="services__box flex clr-white">
+        <h2 class="uppercase fs-600 line-height-2 ltr-spacing-1 medium">Web design</h2>
+        <div class="cta uppercase clr-white ltr-spacing-2">View projects <span><img src="assets/shared/desktop/icon-right-arrow.svg" alt=""></span></div>
+      </a>
+    </div>  
+
+
+    <section class="page-cta flex container clr-white">
+      <div class="page-cta__desc">
+        <h2 class="fs-600 line-height-1 medium">Let’s talk about your project</h2>
+        <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+      </div>
+      <a href="contact.html" class="page-cta__btn btn btn--light">Get in touch</a>
+    </section>
+
+  </main>
+
+  <footer class="bg-black">
+    <div class="footer__top max-width grid">
+      <a href="#" class="logo"><img src="assets/shared/desktop/logo-light.png" alt=""></a>
+
+      <ul class="footer__top__nav flex uppercase fs-300 ltr-spacing-1 clr-white" role="list">
+        <li><a href="about.html">Our company</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="footer__top__divider"></div>
+    </div>
+
+    <div class="footer__bottom max-width flex clr-white">
+
+      <div class="footer__bottom__address">
+        <p class="bold">Designo Central Office</p>
+        <p>3886 Wellington Street</p>
+        <p>Toronto, Ontario M9C 3J5</p>
+      </div>
+
+      <div class="footer__bottom__info">
+        <p class="bold">Contact Us (Central Office)</p>
+        <p>P : +1 253-863-8967</p>
+        <p>M : contact@designo.co</p>
+      </div>
+
+      <div class="footer__bottom__social flex">
+        <a href="" class="footer__social__facebook"><img src="assets/shared/desktop/icon-facebook.svg" alt=""></a>
+        <a href="" class="footer__social__youtube"><img src="assets/shared/desktop/icon-youtube.svg" alt=""></a>
+        <a href="" class="footer__social__twitter"><img src="assets/shared/desktop/icon-twitter.svg" alt=""></a>
+        <a href="" class="footer__social__pinterest"><img src="assets/shared/desktop/icon-pinterest.svg" alt=""></a>
+        <a href="" class="footer__social__instagram"><img src="assets/shared/desktop/icon-instagram.svg" alt=""></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="apps/app.js"></script>
+</body>
+</html>
