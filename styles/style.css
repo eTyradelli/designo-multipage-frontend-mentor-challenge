@@ -288,7 +288,7 @@ select {
 @media (min-width: 60em) {
 
   body::before {
-    content: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+    content: url(../assets/shared/desktop/bg-pattern-leaf.svg);
     position: absolute;
     left: 50vw;
     z-index: -1;
@@ -296,7 +296,7 @@ select {
   }
   
   body::after {
-    content: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+    content: url(../assets/shared/desktop/bg-pattern-leaf.svg);
     position: absolute;
     bottom: 0;
     right: 50vw;
@@ -557,7 +557,7 @@ main {
 }
 
 .locations__item__img {
-  background-image: url(/assets/shared/desktop/bg-pattern-small-circle.svg);
+  background-image: url(../assets/shared/desktop/bg-pattern-small-circle.svg);
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -610,7 +610,7 @@ main {
   position: relative;
   z-index-2;
 
-  background: url(/assets/shared/desktop/bg-pattern-call-to-action.svg), hsl(var(--clr-accent));
+  background: url(../assets/shared/desktop/bg-pattern-call-to-action.svg), hsl(var(--clr-accent));
   background-size: 275%;
   background-repeat: no-repeat;
   background-position: center right;

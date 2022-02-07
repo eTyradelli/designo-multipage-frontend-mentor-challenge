@@ -2,7 +2,7 @@
   padding: 5rem 1.5rem;
   margin-inline: -1.5rem;
   text-align: center;
-  background: url(/assets/web-design/desktop/bg-pattern-intro-web.svg), hsl(var(--clr-accent));
+  background: url(../assets/web-design/desktop/bg-pattern-intro-web.svg), hsl(var(--clr-accent));
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 250%;
@@ -65,37 +65,37 @@
 }
 
 .portfolio__project:nth-child(1) .portfolio__project__image {
-  background: url(/assets/web-design/desktop/image-express.jpg);
+  background: url(../assets/web-design/desktop/image-express.jpg);
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .portfolio__project:nth-child(2) .portfolio__project__image {
-  background: url(/assets/web-design/desktop/image-transfer.jpg);
+  background: url(../assets/web-design/desktop/image-transfer.jpg);
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .portfolio__project:nth-child(3) .portfolio__project__image {
-  background: url(/assets/web-design/desktop/image-photon.jpg);
+  background: url(../assets/web-design/desktop/image-photon.jpg);
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .portfolio__project:nth-child(4) .portfolio__project__image {
-  background: url(/assets/web-design/desktop/image-builder.jpg);
+  background: url(../assets/web-design/desktop/image-builder.jpg);
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .portfolio__project:nth-child(5) .portfolio__project__image {
-  background: url(/assets/web-design/desktop/image-blogr.jpg);
+  background: url(../assets/web-design/desktop/image-blogr.jpg);
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .portfolio__project:nth-child(6) .portfolio__project__image {
-  background: url(/assets/web-design/desktop/image-camp.jpg);
+  background: url(../assets/web-design/desktop/image-camp.jpg);
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -157,14 +157,14 @@
 /* Black grid styles */
 
 .services__box:nth-child(1) {
-  background: url(/assets/home/desktop/image-app-design.jpg);
+  background: url(../assets/home/desktop/image-app-design.jpg);
   background-size: 115%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .services__box:nth-child(2) {
-  background: url(/assets/home/desktop/image-graphic-design.jpg);
+  background: url(../assets/home/desktop/image-graphic-design.jpg);
   background-size: 115%;
   background-repeat: no-repeat;
   background-position: center;

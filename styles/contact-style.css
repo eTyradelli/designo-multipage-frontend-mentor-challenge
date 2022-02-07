@@ -24,7 +24,7 @@
   z-index: 2;
   position: relative;
 
-  background: url(/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg), hsl(var(--clr-accent));
+  background: url(../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg), hsl(var(--clr-accent));
   background-repeat: no-repeat;
   background-position: 20% top;
   background-size: 250%;
@@ -90,7 +90,7 @@ label:focus-within input {
     border-radius: 8px;
     text-align: left;
 
-    background: url(/assets/contact/desktop/bg-pattern-hero-desktop.svg), hsl(var(--clr-accent));
+    background: url(../assets/contact/desktop/bg-pattern-hero-desktop.svg), hsl(var(--clr-accent));
     background-repeat: no-repeat;
     background-position: -50% -50%;
   }
