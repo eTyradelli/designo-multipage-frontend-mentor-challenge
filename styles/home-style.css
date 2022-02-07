@@ -1,9 +1,12 @@
-
 /* Body background shapes variation */
 
 @media (min-width: 60em) {
 
   body::before {
+    -o-transform: translate(-70%, 65%);
+    -ms-transform: translate(-70%, 65%);
+    -moz-transform: translate(-70%, 65%);
+    -webkit-transform: translate(-70%, 65%);
     transform: translate(-70%, 65%);
   }
   
@@ -113,7 +116,10 @@
 /* About */
 
 .about {
-  flex-direction: column;
+  -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
   gap: 5rem;
 }
 
@@ -162,6 +168,9 @@
 @media (min-width: 60em) {
  
   .about {
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
     flex-direction: row;
     gap: var(--gap);
   }

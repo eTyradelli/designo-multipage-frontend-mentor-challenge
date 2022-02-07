@@ -2,6 +2,10 @@
 
 @media (min-width: 60em) {
   body::after {
+    -o-transform: translate(70%,-200%) scale(-1,-1);
+    -ms-transform: translate(70%,-200%) scale(-1,-1);
+    -moz-transform: translate(70%,-200%) scale(-1,-1);
+    -webkit-transform: translate(70%,-200%) scale(-1,-1);
     transform: translate(70%,-200%) scale(-1,-1);
   }
   
