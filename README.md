@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL on Frontend Mentor: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-leafletjs-maps-smooth-scrolling-js-form-validation-G8q-2AbIv)
-- Live Site URL on GitHub Pages: [Add live site URL here](https://etyradelli.github.io/designo-multipage-frontend-mentor-challenge/index.html)
+- Solution URL: [on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-leafletjs-maps-smooth-scrolling-js-form-validation-G8q-2AbIv)
+- Live Site URL: [on GitHub Pages](https://etyradelli.github.io/designo-multipage-frontend-mentor-challenge/index.html)
 
 ## My process
 
@@ -58,7 +58,7 @@ This project uses minimal JavaScript for:
 - CSS Grid
 - Mobile-first workflow
 - Vanilla JavaScript
-- [Leaflet.js](https://nextjs.org/) - JS library
+- [Leaflet.js](https://leafletjs.com/) - JS library
 
 
 ### Continued development
