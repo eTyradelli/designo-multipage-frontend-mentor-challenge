@@ -98,7 +98,8 @@
   background-position: center center;
 }
 
-.portfolio__project:hover .portfolio__project__image {
+.portfolio__project:hover .portfolio__project__image,
+.portfolio__project:focus .portfolio__project__image {
   background-size: 120%;
 }
 
@@ -123,12 +124,14 @@
   padding-bottom: .8em;
 }
 
-.portfolio a:hover .portfolio__project__description {
+.portfolio a:hover .portfolio__project__description,
+.portfolio a:focus .portfolio__project__description {
   background-color: hsl(var(--clr-accent));
   color: hsl(var(--clr-white));
 }
 
-.portfolio a:hover .portfolio__project__description h2 {
+.portfolio a:hover .portfolio__project__description h2,
+.portfolio a:focus .portfolio__project__description h2 {
   color: hsl(var(--clr-white));
 }
 
@@ -171,7 +174,8 @@
   background-position: center;
 }
 
-.services__box:hover {
+.services__box:hover,
+.services__box:focus {
   background-size: 120%;
 }
 

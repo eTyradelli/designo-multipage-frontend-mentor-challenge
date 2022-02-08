@@ -15,9 +15,11 @@ menuToggle.addEventListener('click', () => {
   if(mobileNav.classList.contains('active')){
     btnBurger.style.opacity = 0;
     btnClose.style.opacity = 1;
+    menuToggle.setAttribute("aria-expanded", true);
   }else {
     btnBurger.style.opacity = 1;
     btnClose.style.opacity = 0;
+    menuToggle.setAttribute("aria-expanded", false);
   }
 });
 
@@ -31,7 +33,4 @@ function toggleActive(element1) {
     element1.setAttribute('hidden', true);
   }
 }
-
-
-
 
